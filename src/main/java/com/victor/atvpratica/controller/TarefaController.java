@@ -45,4 +45,9 @@ public class TarefaController {
         return tarefaService.tarefasAtrasadas();
     }
 
+    @DeleteMapping("/deletar/{id}")
+    public void deletarTarefa(@PathVariable Long id) {
+        tarefaService.deletarTarefa(id);
+    }
+
 }
